@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PVP Siddhartha Indoor Navigation</title>
+
+<link rel="stylesheet" href="./css/style.css">
+
+<script type="importmap">
+{
+    "imports": {
+        "three":"https://unpkg.com/three@0.170.0/build/three.module.js",
+        "three/addons/":"https://unpkg.com/three@0.170.0/examples/jsm/"
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<h1>PVP Siddhartha Indoor Navigation System</h1>
+
+<p>Ground Floor Navigation</p>
+
+</div>
+
+<div class="status">
+
+<div class="card">
+
+<span>System</span>
+
+<strong>ACTIVE</strong>
+
+</div>
+
+<div class="card">
+
+<span>Model</span>
+
+<strong>campus.glb</strong>
+
+</div>
+
+<div class="card">
+
+<span>Navigation</span>
+
+<strong>READY</strong>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<div class="container">
+
+<!-- ================= LEFT ================= -->
+
+<aside class="sidebar">
+
+<h2>Search Room</h2>
+
+<input
+id="searchInput"
+type="text"
+placeholder="Search Room..."
+>
+
+<h2>Departments</h2>
+
+<ul id="departmentList">
+
+<li>Administrative Block</li>
+
+<li>Mechanical Department</li>
+
+<li>EEE Department</li>
+
+<li>Civil Department</li>
+
+<li>Library</li>
+
+<li>Canteen</li>
+
+<li>Seminar Hall</li>
+
+</ul>
+
+</aside>
+
+
+
+<!-- ================= CENTER ================= -->
+
+<main>
+
+<div id="viewer"></div>
+
+</main>
+
+
+
+<!-- ================= RIGHT ================= -->
+
+<aside class="infoPanel">
+
+<h2>Room Information</h2>
+
+<h3 id="roomName">
+
+Select Room
+
+</h3>
+
+<p id="roomDepartment">
+
+Department :
+
+</p>
+
+<p id="roomFloor">
+
+Floor : Ground Floor
+
+</p>
+
+<p id="roomQR">
+
+QR : Available
+
+</p>
+
+<button
+class="navigateBtn"
+>
+
+Navigate
+
+</button>
+
+</aside>
+
+</div>
+
+
+
+<footer>
+
+<div>
+
+PVP Indoor Navigation v2
+
+</div>
+
+<div>
+
+Three.js • Blender • WebGL
+
+</div>
+
+</footer>
+
+
+
+<script type="module" src="./js/viewer.js"></script>
+
+</body>
+
+</html>
